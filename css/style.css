@@ -75,13 +75,13 @@ html {
 }
 h1 {
     font: normal 28px/1.5 Georgia,"Times New Roman", Times, serif;
-    margin: 0 0 17px;
+    margin: 0 0 15px;
 }
 li {
     float: left;
 }
 figure {
-    width: 169px;
+    width: 170px;
     float: left;
     font-size: 12px;
 }
@@ -89,8 +89,9 @@ section {
     clear: left;
 }
 nav {
-  float: left;
-  margin: 0 0 2px -7px;
+    float: left;
+    font-size: 13px;
+    margin: 0 0 5px -7px;
 }
 ol {
     text-transform: capitalize;
@@ -102,19 +103,20 @@ ol li:last-child:after {
      content: "";
 }
 ol a {
-    padding: 0 7px 0;
+    padding: 0 7px;
 }
 ul {
     border-top: 1px dotted #000000;
     font-size: 11px;
-    line-height: 15px;
-    margin: 10px 0 0;
+    line-height: 13px;
+    margin: 9px 0 6px;
     overflow: hidden;
-    padding: 5px 0 6px;
+    padding: 6px 0;
 }
 ul li {
     border-right: 1px solid #202020;
     padding: 0 7px;
+    
 }
 .resize {
     border: none;
@@ -123,30 +125,25 @@ ul a {
    background: transparent url('../images/sprites.gif') no-repeat;
    display: block;
    color: #202020;
+   padding: 0 0 0 16px;
 }
 .post a {
-    background-position: -1px -479px;
-    padding: 0 0 0 16px;
+    background-position: -1px -480px;
 }
 .email a {
-    background-position: 0 -254px;
-    padding: 0 0 0 16px;
+    background-position: 0 -255px;
 }
 .print a {
-    background-position: 0 -299px;
-    padding: 0 0 0 16px;
+    background-position: -1px -300px;
 }
 .share a {
-    background-position: 0 -344px;
-    padding: 0 0 0 16px;
+    background-position: 0 -345px;
 }
 .resize a {
-    background-position: 0 -389px;
-    padding: 0 0 0 16px;
+     background-position: -1px -390px;
 }
 .smaller a {
-    background-position: 0 -434px;
-    padding: 0 0 0 16px;
+    background-position: -1px -435px;
 }
 .wrap {
     width: 430px;
@@ -162,8 +159,8 @@ a:hover {
 figure .byline {
     color: #666666;
     float: right;
+    margin: -3px 0 8px 0;
     text-align: right;
-    margin: 0 0 10px;
 }
 .wrap .updated {
     color: #666;
@@ -186,8 +183,8 @@ p.larger {
 }
 .byline .org {
     display: block;
-    font-size: 12px;
-    margin: 0 0 10px;
+    font-size: 11px;
+    margin: 1px 0 -1px;
 }
 #main figure .byline .org {
     display: inline;
@@ -195,27 +192,32 @@ p.larger {
 #main figure .byline span{
     font-weight: normal ;
     color: #666;
-    font-size: 11px;
+    font-size: 10px;
 }
 .enlarge {
    color: #CC6600;
    text-transform: uppercase;
-   font-size: 11px;
+   font-size: 10px;
    float: left;
    margin: 0 0 4px;
  }
 .enlarge a {
+    background: url("../images/sprites.gif") no-repeat scroll -1px -390px transparent;
     color: #CC6600;
-    background: transparent url('../images/sprites.gif') no-repeat -3px -390px;
-    padding: 0 0 0 18px;
-    font-size: 11px;
     display: block;
+    padding: 0 0 0 20px;
   }
 
 figcaption {
      clear: both;
+     line-height: 1.1;
  }
 .wrap p {
-     margin: 0 0 15px;
+     margin: 0 0 10px;
  }
-
+.wrap p.byline {
+      margin: 0 0 10px;
+  }
+.wrap p.published {
+    margin: -1px 0 8px;
+}
